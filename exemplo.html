@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de exemplo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+ul {
+    margin: 50px;
+}
+li {
+    display: inline;
+    border: 10px darkcyan dotted;
+    padding: 20px;
+    margin: 10px;
+}        
+
+li:hover {
+    background-color: burlywood;
+}
+
+.david {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.entretenimento {
+    color:orange;
+}
+.esporte {
+    color:darkgreen;
+}
+
+.largura200 {
+    width: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+        </nav>
+        <h1>Título principal</h1>
+        <h2>Subtítulo</h2>
+        <div class="row">
+            <div class="col">
+                Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Mé faiz elementum girarzis, nisi eros vermeio. Per aumento de cachacis, eu reclamis. Interagi no mé, cursus quis, vehicula ac nisi.
+            </div>
+            <div class="col">
+                Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores não altera o pão duris. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+            </div>
+            <div class="col">
+                Quem num gosta di mim que vai caçá sua turmis! Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.
+            </div>
+        </div>
+
+        <div>
+            Texto qualquer. Onde vai aparecer?
+        </div>
+        
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Bem feito!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade show ml-5" role="alert">
+            Hello world de alertas no Bootstrap! <span class="badge badge-pill badge-danger">Atenção!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Fechar">
+                <span aria-hidden="true">[ - ]</span>
+            </button>
+        </div>
+
+        <ul id="lista">
+            <li class="entretenimento">Novela</li>
+            <li class="entretenimento">Filme</li>
+            <li class="esporte">Futebol</li>
+            <li class="esporte">Bola de gude</li>
+        </ul>
+
+        <div>
+            <button class="btn btn-primary" onclick="adicionaElemento()">Adiciona elemento na lista</button>
+        </div>
+
+        <img src="img/mafagafo.jpg" />
+
+        <a href="teste.html">Link</a>
+
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control form-control" id="nome" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" class="form-control" id="telefone" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="aceite" />
+                        <label for="aceite" class="form-check-label">Eu aceito os termos e condições</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-success btn-lg" value="Enviar" /> 
+                <input type="reset" class="btn btn-link btn-lg" value="Cancelar" /> 
+            </fieldset>
+        </form>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function adicionaElemento() {
+    var novoElemento = document.createElement('li');
+    novoElemento.innerHTML = 'Oi!';
+
+    var elementoLista = document.getElementById('lista');
+    elementoLista.appendChild(novoElemento);
+}
+
+</script>
+</body>
+</html>
+
+
+
